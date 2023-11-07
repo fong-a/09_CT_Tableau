@@ -2,37 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau Public Tutorial</title>
-    <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        header {
+            text-align: center;
+        }
+        .menu-container {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+        }
+        .content-container {
+            margin-left: 250px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Tableau Public Bar Chart Tutorial</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Creating a Bar Chart in Tableau Public</h2>
-            <ol>
-                <li>Open Tableau Public and import your billionaire dataset CSV file.</li>
-                <li>Move to "Sheet 1" to start creating your visualization.</li>
-                <li>Drag 'personName' to Rows and 'finalWorth' to Columns to create a bar chart.</li>
-                <li>Sort the bars in descending order and format the 'finalWorth' values for clarity.</li>
-                <li>Use the "Color" mark to categorize bars and add labels for better readability.</li>
-                <li>Add descriptive titles and save your workbook to Tableau Public.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Extension Task: Comparative Analysis Dashboard</h2>
-            <p>Create a comprehensive dashboard comparing different facets of the billionaires' wealth.</p>
-            <ol>
-                <li>Create additional visualizations such as pie charts and maps.</li>
-                <li>Combine these onto a new dashboard canvas in Tableau Public.</li>
-                <li>Make your dashboard interactive with filter and action features.</li>
-                <li>Add text objects for data storytelling and iterate based on feedback.</li>
-            </ol>
-        </section>
-    </main>
+    <div class="menu-container">
+        <aside class="menu">
+            <p class="menu-label">
+                Tableau Guides
+            </p>
+            <ul class="menu-list">
+                <li><a href="#bar-chart-tutorial" class="is-active">Bar Chart Tutorial</a></li>
+                <!-- Insert Further Page Links Here -->
+            </ul>
+        </aside>
+    </div>
+    <div class="content-container">
+        <header>
+            <h1 class="title is-1">Tableau Public Tutorial</h1>
+        </header>
+        <main class="section">
+            <!-- Your content sections will go here -->
+            <!-- Similar to the previous content provided -->
+        </main>
+    </div>
+    <script>
+        // JavaScript for handling active menu state and navigation (if needed)
+    </script>
 </body>
 </html>
